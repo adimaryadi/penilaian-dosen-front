@@ -1,0 +1,106 @@
+.select2-container {
+  margin: 0 !important;
+  
+  .select2-selection__rendered {
+    font-size: 13px !important;
+    margin: 0 8px !important;
+    padding: 0 !important;
+  }
+
+  .select2-selection--single,
+  .select2-selection--multiple {
+    background-color: white !important;
+    border: 1px solid #b7b7b7 !important;
+    border-radius: 4px !important;
+    color: $black-87;
+    display: block;
+    height: calc(1.7rem + 5px) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    &:focus {
+      border: 1px solid $primary-color !important;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .02) !important;
+      outline: none !important;
+    }
+
+    .select2-selection__arrow {
+      margin: 0 4px;
+      right: 0px !important;
+      top: 1px !important;
+      
+    }
+  }
+
+  .select2-search--dropdown {
+
+    .select2-search__field {
+      border-radius: 0 !important;
+      font-size: 13px;
+
+      &:focus {
+        border: 1px solid $primary-color !important;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .02) !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+
+.select2-container--open {
+
+  .select2-dropdown--above,
+  .select2-dropdown--below {
+    border: 1px solid rgba(0, 0, 0, .1) !important;
+    border-radius: 0 !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .02) !important;
+    margin: -12px 0 0 !important;
+  }
+}
+
+.select2-results__option {
+  color: $black-87;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.select2-results__group {
+  color: $black-87;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.select2-results__option--highlighted[aria-selected] {
+  background-color: $primary-color !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .select2-container {
+    margin: 0 0 4px !important;
+    width: calc(100% - 32px);
+
+    .select2-search--dropdown {
+      margin: 4px;
+      width: calc(100% - 8px);
+    }
+  }
+
+  .select2-results__option {
+    color: $black-87;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .select2-container--open {
+
+    .select2-dropdown--above,
+    .select2-dropdown--below {
+      margin: -8px 0 !important;
+      width: 100%;
+    }
+  }
+}

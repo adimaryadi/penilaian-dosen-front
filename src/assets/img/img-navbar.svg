@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1088" height="64" viewBox="0 0 1088 64">
+  <g id="img-navbar" transform="translate(-139 -24)">
+    <rect id="Rectangle_736" data-name="Rectangle 736" width="1088" height="64" rx="4" transform="translate(139 24)" fill="#03ad09"/>
+    <g id="confetti" transform="translate(139 24)" opacity="0.125">
+      <rect id="Rectangle_732" data-name="Rectangle 732" width="22.337" height="22.337" rx="4" transform="translate(0 41.663)" fill="#fff" opacity="0.69"/>
+      <rect id="Rectangle_731" data-name="Rectangle 731" width="31.003" height="31.003" rx="4" transform="translate(90.534)" fill="#fff" opacity="0.189"/>
+      <rect id="Rectangle_730" data-name="Rectangle 730" width="28.213" height="28.213" rx="4" transform="translate(198.18 35.787)" fill="#fff" opacity="0.784"/>
+      <rect id="Rectangle_729" data-name="Rectangle 729" width="29.459" height="29.459" rx="4" transform="translate(260.319 34.541)" fill="#fff" opacity="0.262"/>
+      <rect id="Rectangle_728" data-name="Rectangle 728" width="18.307" height="18.307" rx="4" transform="translate(406.508 20.055)" fill="#fff" opacity="0.582"/>
+      <rect id="Rectangle_727" data-name="Rectangle 727" width="28.896" height="28.896" rx="4" transform="translate(471.342 31.322)" fill="#fff" opacity="0.421"/>
+      <rect id="Rectangle_726" data-name="Rectangle 726" width="29.871" height="29.871" rx="4" transform="translate(541.04 26.81)" fill="#fff" opacity="0.862"/>
+      <rect id="Rectangle_725" data-name="Rectangle 725" width="31.99" height="31.99" rx="4" transform="translate(674.408 25.824)" fill="#fff" opacity="0.458"/>
+      <rect id="Rectangle_724" data-name="Rectangle 724" width="27.79" height="27.79" rx="4" transform="translate(753.406 0)" fill="#fff" opacity="0.618"/>
+      <rect id="Rectangle_723" data-name="Rectangle 723" width="20.056" height="20.056" rx="4" transform="translate(851.325 43.944)" fill="#fff" opacity="0.926"/>
+      <rect id="Rectangle_722" data-name="Rectangle 722" width="30.866" height="30.866" rx="4" transform="translate(902.426 18.735)" fill="#fff" opacity="0.862"/>
+      <rect id="Rectangle_721" data-name="Rectangle 721" width="21.975" height="21.975" rx="4" transform="translate(1066.024 31.397)" fill="#fff" opacity="0.631"/>
+    </g>
+  </g>
+</svg>

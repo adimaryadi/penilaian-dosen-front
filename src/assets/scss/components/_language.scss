@@ -1,0 +1,104 @@
+.language-selector {
+  height: 46px;
+  margin: 8px 24px;
+  padding: 4px 0;
+  position: relative;
+
+  .flag {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    cursor: pointer;
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 24px;
+    }
+
+    span {
+      color: $black-87;
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 8px;
+    }
+
+    .icon--dropdown {
+      background: url('../../img/icons/ic-arrow-down.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      float: right;
+      height: 16px;
+      margin: 0 4px;
+      opacity: .5;
+      width: 16px;
+    }
+  }
+
+  .languages {
+    background: white;
+    box-shadow: $box-shadow;
+    display: none;
+    left: 0;
+    margin: 8px 8px;
+    padding: 0;
+    position: absolute;
+    width: 120px;
+    z-index: 3;
+
+    &:after,
+    &:before {
+      bottom: 100%;
+      left: 70%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-bottom-color: white;
+      border-width: 8px;
+      margin-left: -8px;
+    }
+
+    &:before {
+      border-bottom-color: white;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
+    li {
+      cursor: pointer;
+      display: inline-flex;
+      padding: 8px;
+      width: 100%;
+
+      a {
+        text-decoration: none;
+
+        span {
+          color: $black-87;
+          font-size: 12px;
+          margin-left: 4px;
+          text-align: right;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      img {
+        height: 16px;
+      }
+    }
+  }
+}

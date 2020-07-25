@@ -1,0 +1,102 @@
+#{$buttons} {
+  border: 2px;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 18px;
+  text-align: center;
+  text-decoration: none;
+  
+  span {
+    padding: 8px;
+    vertical-align: text-top;
+  }
+
+}
+
+.button-back {
+  background-color: transparent !important;
+  border: 1px solid $primary-color !important;
+  color: $primary-color !important;
+  float: left;
+  
+  &:hover {
+    border: 1px solid $primary-dark-color !important;
+    color: $primary-dark-color !important;
+    transition: all .2s ease !important;
+  } 
+}
+
+.button-logout {
+  @extend .button-back;
+  
+  float: right;
+  margin: 16px 0 0;
+  
+  &::before {
+    display: none;
+  }
+} 
+
+.button-next {
+  background-color: $primary-color !important;
+  border: 2px solid $primary-color !important;
+  color: white;
+  float: right;
+  justify-content: flex-end;
+  margin-left: 8px;
+  
+  &:hover {
+    background-color: $primary-dark-color !important;
+    border: 2px solid $primary-dark-color !important;
+    color: white !important;
+    transition: all .2s ease !important;
+  }
+}
+
+.button-success {
+  background-color: $accent-green !important;
+  border: 2px solid $accent-green !important;
+  
+  &:hover {
+    background-color: $accent-green-dark !important;
+    border: 2px solid $accent-green-dark !important;
+  }
+}
+  
+.button-warning {
+  background-color: $accent-red !important;
+  border: 2px solid $accent-red !important;
+  
+  &:hover {
+    background-color: $accent-red-dark !important;
+    border: 2px solid $accent-red-dark !important;
+  }
+}
+
+@media only screen and (max-width: $laptop) {
+  .button-logout {
+    margin: 16px 24px;
+    padding: 4px !important;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .button-logout {
+    margin: 16px 16px;
+    
+    i {
+      border-right: none !important;
+      display: block;
+      font-size: 12px !important;
+      padding: 2px !important;
+    }
+    
+    span {
+      display: none;
+    }
+  }
+}
+

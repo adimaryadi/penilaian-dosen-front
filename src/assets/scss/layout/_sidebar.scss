@@ -1,0 +1,113 @@
+.sidebar {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+  margin: 8px 0;
+  max-width: 260px;
+  outline: none;
+  padding: 16px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 24px;
+
+  .menu {
+    cursor: pointer;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+
+    .dropdown {
+      background-color: #ffffff;
+      display: none;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      li {
+        list-style: none;
+        margin: 0 !important;
+        padding: 0;
+
+        a {
+          color: $black-60;
+          cursor: pointer;
+          display: block;
+          font-size: 12px;
+          font-weight: 500;
+          text-decoration: none;
+          padding: 6px 16px 6px 56px;
+
+          &:hover {
+            color: $primary-color;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+
+      .active {
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .title {
+      align-items: center;
+      border-left: 4px solid white;
+      display: flex;
+      padding: 8px 0px 8px 0;
+
+      i {
+        color: $black-60;
+        display: inline-block;
+        height: 16px;
+        margin: 4px 0 4px 20px;
+        min-height: 16px;
+        min-width: 16px;
+      }
+
+      p {
+        color: $black-60;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      &:hover {
+        i,
+        p {
+          color: $primary-color;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $laptop) {
+  .sidebar {
+    background-color: #f1f2f2;
+    border-radius: 0 !important;
+    display: none;
+    height: 100vh;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 0;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    z-index: 5;
+
+    .menu {
+      width: 100%;
+
+      &:first-child,
+      &:last-child {
+        border-radius: 0 !important;
+      }
+    }
+  }
+}

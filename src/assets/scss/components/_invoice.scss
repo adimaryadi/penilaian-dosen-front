@@ -1,0 +1,48 @@
+.invoice {
+  margin-top: 32px;
+  width: 100%;
+  
+  .invoice-body {
+    display: table;
+    width: 100%;
+    
+    .fieldset {
+      background-color: #fcfcfc;
+      display: table-row;
+      width: 100%;
+      
+      &:nth-child(even) {
+        background: #f7f7f7;
+      }  
+      
+      label {
+        display: table-cell;
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0;
+        padding: 8px 16px;
+        width: 50%;
+      }
+      
+      p {
+        display: table-cell;
+        font-size: 11px;
+        text-align: right;
+        margin: 0;
+        padding: 8px 16px;
+        width: 50%;
+      }
+    }
+  }
+  
+  .invoice-header {
+    background-color: $primary-color;
+    padding: 16px;
+    
+    .invoice-title {
+      color: white;
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+}

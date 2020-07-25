@@ -1,0 +1,46 @@
+// Breakpoints
+
+$mobile: 320px;
+$tablet: 768px;
+$laptop: 992px;
+
+// Colors
+
+$black-87: rgba(0, 0, 0, 0.87);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-38: rgba(0, 0, 0, 0.38);
+$primary-color: #1487D6;
+$primary-dark-color: #005ba4;
+$primary-light-color: #63b6ff;
+$primary-hover-color: #005ba4;
+$accent-color: #ffa634;
+$accent-dark-color: #FB8C00;
+$accent-green: #66BB6A;
+$accent-green-dark: #43A047;
+$accent-red: #FF5252;
+$accent-red-dark: #E53935;
+
+// Forms
+
+$buttons: ('
+  button,
+  .button,
+  a.button,
+  [type=submit],
+  [type=button],
+');
+  
+$input-fields: ('
+  [type=date],
+  [type=email],
+  [type=file],
+  [type=number],
+  [type=password],
+  [type=text],
+  select,
+  textarea
+');
+
+// Shadows
+
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);

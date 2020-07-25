@@ -1,0 +1,32 @@
+.error-message {
+  border: 1px solid $accent-red;
+  display: none;
+  margin-bottom: 24px;
+  width: 100%;
+  
+  .message {
+    
+    li {
+      color: $accent-red;
+      font-size: 12px;
+      margin: 4px 0;
+    }
+  }
+  
+  .title {
+    background-color: $accent-red;
+    display: table-row;
+    
+    p {
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0;
+      padding: 8px;
+    }
+  }
+}
+
+.show-message {
+  display: table;
+}

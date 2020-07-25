@@ -1,0 +1,224 @@
+nav {
+  background-image: url(../img/img-navbar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 56px;
+  margin: 16px 8px;
+  max-width: 1088px;
+  padding: 12px 16px;
+  z-index: 2;
+  
+  .nav-account {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+    .info {
+      background: transparent;
+      margin-right: 16px;
+      
+      span {
+        color: white;
+        font-size: 12px;
+        font-weight: 300; 
+      }
+      
+      b {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    
+    .logout {
+      align-items: center;
+      background: white;
+      border-radius: 64px;
+      cursor: pointer;
+      display: flex;
+      padding: 4px 12px 4px 4px;
+      
+      &:hover {
+        
+        span {
+          color: $accent-red;
+          transition: all .2s ease;
+        }
+        
+        .circle {
+          background-color: $accent-red;
+          transition: all .2s ease;
+        }
+      }
+      
+      span {
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 8px;
+      }
+      
+      .circle {
+        align-items: center;
+        background-color: $primary-color;
+        border-radius: 100%;
+        display: inline-flex;
+        height: 24px; 
+        justify-content: center;
+        width: 24px;
+        
+        i {
+          color: white;
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  .nav-brand {
+    align-items: center;
+    display: flex;
+    height: 100%;
+
+    img {
+      height: 24px;
+    }
+    
+    span {
+      color: white;
+      font-size: 12px;
+      font-weight: 300;
+      margin: 0 24px;
+    }
+  }
+
+  .nav-info {
+    text-align: left;
+    background: white;
+    width: 100%;
+
+    .account {
+      @extend .flex-column;
+      text-align: right;
+      width: 200px;
+
+      .account-name {
+        color: $black-87;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 2px 0;
+
+        .logout {
+
+          a {
+            color: $primary-color;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+              color: $primary-dark-color;
+              transition: all .2s ease;
+            }
+          }
+        }
+      }
+
+      .datetime {
+        color: $black-87;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 4px 0;
+      }
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $laptop) {
+  nav {
+    padding: 0 24px;
+    
+    .container {
+      width: 100%;
+    }
+
+    .nav-brand {
+      margin: 0;
+      text-align: left;
+      width: auto;
+
+      b {
+        display: none;
+      }
+
+      img {
+        padding-left: 0;
+      }
+    }
+
+    .nav-info {
+      justify-content: flex-end;
+      padding: 0 16px;
+
+      p {
+        display: none;
+      }
+    }
+
+    .nav-toggle {
+      cursor: pointer;
+      display: block;
+      padding: 16px 0;
+
+      i {
+        color: $black-87;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    
+    .container {
+      padding: 0 8px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: $laptop) {
+  nav {
+    background-color: #f1f2f2;
+    position: fixed;
+    padding: 0 16px;
+    
+    .nav-account {
+      display: none;
+    }
+    
+    .nav-brand {
+      
+      img {
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    padding: 0 8px;
+  }
+}
