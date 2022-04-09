@@ -18,7 +18,7 @@
     "fs": "0.0.1-security",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "notifyjs-node": "^0.4.2",
     "papaparse": "^5.2.0",
     "sass-loader": "^8.0.0",
